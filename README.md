@@ -2,6 +2,17 @@
 
 This is a multi-repo workspace containing both the TVMaze frontend application and API server.
 
+## Notes
+
+- All architectural approaches here implemented for `demonstration purposes only` and might be too redundant. The choice of a particular architecture depends on various factors, the most important of which is whether it is good enough and works as expected for `all team members`.
+
+- The frontend project uses React with TypeScript and bases on clean architecture
+- The API project uses Express.js with TypeScript and bases on nest-like architecture
+- Both projects share a common TypeScript base configuration
+- Path mapping is configured for easy imports between projects
+
+- There is a `5-second delay` on the search endpoint to observe how it works better.
+
 ## Project Structure
 
 ```
@@ -87,12 +98,5 @@ Run TypeScript type checking for all projects:
 3. Frontend will be available at `http://localhost:3000`
 4. API will be available at the configured port (check tvmaze-api/src/index.ts)
 
-## Notes
 
-- All architectural approaches here are implemented for demonstration purposes only. The choice of a particular architecture depends on various factors, the most important of which is whether it is good enough and works as expected for all team members.
-
-- The frontend project uses React with TypeScript and bases on clean architecture
-- The API project uses Express.js with TypeScript and bases on nest-like architecture
-- Both projects share a common TypeScript base configuration
-- Path mapping is configured for easy imports between projects
 
